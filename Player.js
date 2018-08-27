@@ -27,7 +27,7 @@ class Player {
     // TRY-CATCH for just testing
     try {
       let limit = gameState.players[5].stack;
-      consol.log(limit);
+      console.log(limit);
     }
     catch(error) {
       console.log('ERROR: ' + error);
