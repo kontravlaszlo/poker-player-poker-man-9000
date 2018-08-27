@@ -43,6 +43,8 @@ class Player {
       console.log('exceptioooooooooooooooon');
     }
 
+    console.log(typeof communityCards);
+
     try {
       if (communityCards.size != 0) {
         //var communityObject = JSON.parse(communityCards);
