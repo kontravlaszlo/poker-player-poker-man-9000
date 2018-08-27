@@ -9,7 +9,7 @@ class Player {
     console.log(gameState.players[5].name);
 
     var mycards = gameState.players[5].hole_cards;
-    mycards = JSON.stringify(mycards);
+    //mycards = JSON.stringify(mycards);
     console.log(mycards);
 
     for (i = 0; i < gameState.players.length(); i++) {
