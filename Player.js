@@ -14,7 +14,7 @@ class Player {
     console.log(gameState.players[5].name);
     console.log(mycardsJson);
     console.log(communityCards);
-    console.log(stack);
+    console.log('My money: ' + stack);
 
     for (i = 0; i < gameState.players.size; i++) {
       if (gameState.players[i].bet > bet_number && gameState.players[i] != gameState.players[5] && gameState.players[i].bet > 0) {
