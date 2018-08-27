@@ -24,7 +24,7 @@ class Player {
       if (gameState.players[i].bet > bet_number && gameState.players[i].id != gameState.players[5].id && gameState.players[i].bet > 0) {
         bet_number = gameState.players[i].bet +1;
         console.log('siker');
-        console.log('Legnagyobb ajálat: ' + bet_number);
+        console.log("Legnagyobb ajánlat: " + bet_number);
         
       }
       console.log('Object tipus: ' + typeof gameState.players[i].bet);
