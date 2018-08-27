@@ -5,7 +5,7 @@ class Player {
 
   static betRequest(gameState, bet) {
     let i;
-    let bet_number = 0;
+    let bet_number = 801;
     //console.log(gameState);
     console.log(gameState.players[5].name);
 
