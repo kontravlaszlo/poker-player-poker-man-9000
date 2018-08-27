@@ -25,6 +25,7 @@ class Player {
         bet_number = gameState.players[i].bet +1;
         
       }
+      console.log('Object tipus: ' + typeof gameState.players[i].bet);
     }
 
     bet(801);
