@@ -22,6 +22,8 @@ class Player {
       }
     }
     bet(bet_number);
+
+    console.log(bet_number);
     if (mycards[0].rank === mycards[1].rank) {
       console.log('bbbbrrrrrreeeeeeeekkkkkkkooooookokokokokokokok');
     } else {
