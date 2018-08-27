@@ -6,7 +6,7 @@ class Player {
   static betRequest(gameState, bet) {
     bet(0);
     //console.log(gameState);
-    console.log(Player.name);
+    console.log(gameState.Player);
   }
 
   static showdown(gameState) {
