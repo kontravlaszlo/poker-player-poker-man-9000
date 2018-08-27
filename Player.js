@@ -4,13 +4,20 @@ class Player {
   }
 
   static betRequest(gameState, bet) {
-    bet(200);
+    let bet_number = 0;
     //console.log(gameState);
     console.log(gameState.players[5].name);
 
     var mycards = gameState.players[5].hole_cards;
     mycards = JSON.stringify(mycards);
     console.log(mycards);
+
+    for (i = 0; i < gameState.players.length(); i++) {
+      if (gameState.players[i].bet > bet && gameState.players[i] != gameState.players[5]) {
+        bet_number = gameState.players[i].bet +1;
+      }
+    }
+    bet(bet_number);
   }
 
   static showdown(gameState) {
