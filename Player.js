@@ -39,7 +39,7 @@ class Player {
     for(i=0; i<communityObject.size; i++) {
     cardsHandTableList.push(communityObject[i].rank);
     }
-    console.log(JSON.stringify(cardsHandTableList));
+    console.log(cardsHandTableList);
   }
 
   static showdown(gameState) {
