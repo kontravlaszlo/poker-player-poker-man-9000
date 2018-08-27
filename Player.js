@@ -52,14 +52,14 @@ class Player {
       var communityObject = JSON.parse(communityCards);
       console.log('Ezzzzzzzzzzzzzzz: ' + communityObject);
 
-      var cardsHandTableList = [];
+      /*var cardsHandTableList = [];
       for(i=0; i<mycards.size; i++) {
         cardsHandTableList.push(mycards[i].rank);
       }  
       for(i=0; i<communityObject.size; i++) {
       cardsHandTableList.push(communityObject[i].rank);
       }
-      console.log(cardsHandTableList);
+      console.log(cardsHandTableList);*/
     } catch(err) {
       console.log(err);
     }
