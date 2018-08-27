@@ -6,7 +6,7 @@ class Player {
   static betRequest(gameState, bet) {
     bet(200);
     //console.log(gameState);
-    console.log(gameState.players[4].name);
+    console.log(gameState.players[5].name);
 
     var mycards = gameState.players[5].hole_cards
     mycards = JSON.stringify(mycards);
