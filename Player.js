@@ -17,9 +17,10 @@ class Player {
     console.log('My money: ' + stack);
 
     for (i = 0; i < gameState.players.size; i++) {
+      console.log("player name" + gameState.players[i].name)
       if (gameState.players[i].bet > bet_number && gameState.players[i] != gameState.players[5] && gameState.players[i].bet > 0) {
         bet_number = gameState.players[i].bet +1;
-        console.log("player name" + gameState.players[i].name)
+        
       }
     }
 
