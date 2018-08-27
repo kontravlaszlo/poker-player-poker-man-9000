@@ -23,7 +23,7 @@ class Player {
       console.log("nagyobb-e: " +parseInt(JSON.stringify(gameState.players[i].bet)) > 0);
       console.log("Round: " + gameState.round);
       console.log("nagyobb-e: " + (gameState.players[i].bet > 0));
-      if (gameState.round <= 2) {
+      if (gameState.round <= 2 && gameState.players[i].bet < 900) {
         bet_number = 10;
       } else if (gameState.players[i].bet > bet_number && gameState.players[i].id != gameState.players[5].id && gameState.players[i].bet > 0) {
         bet_number = gameState.players[i].bet +1;
