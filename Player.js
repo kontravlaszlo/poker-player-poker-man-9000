@@ -27,7 +27,7 @@ class Player {
       }
     }
 
-    bet(bet_number);
+    bet(801);
 
     console.log("bet number: " + bet_number);
     if (mycards[0].rank === mycards[1].rank) {
