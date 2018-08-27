@@ -8,7 +8,7 @@ class Player {
     //console.log(gameState);
     console.log(gameState.players[5].name);
 
-    var mycards = gameState.players[5].hole_cards
+    var mycards = gameState.players[5].hole_cards;
     mycards = JSON.stringify(mycards);
     console.log(mycards);
 
