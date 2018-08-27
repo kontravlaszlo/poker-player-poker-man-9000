@@ -30,7 +30,7 @@ class Player {
       console.log('Object tipus: ' + typeof gameState.players[i].bet);
     }
 
-    bet(801);
+    bet(bet_number);
 
     console.log("bet number: " + bet_number);
     if (mycards[0].rank === mycards[1].rank) {
