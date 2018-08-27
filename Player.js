@@ -18,6 +18,9 @@ class Player {
 
     for (i = 0; i < gameState.players.size; i++) {
       console.log("player name" + gameState.players[i].name)
+      console.log("player i bet:" + gameState.players[i].bet)
+      console.log("énvok-e: " + gameState.players[i])
+      console.log("nagyobb-e: " + gameState.players[i].bet > 0)
       if (gameState.players[i].bet > bet_number && gameState.players[i] != gameState.players[5] && gameState.players[i].bet > 0) {
         bet_number = gameState.players[i].bet +1;
         
