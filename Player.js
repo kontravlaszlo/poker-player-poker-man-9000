@@ -21,6 +21,16 @@ class Player {
         bet_number = gameState.players[i].bet +1;
       }
     }
+
+    // TRY-CATCH for just testing
+    try {
+      stackLowerThan();
+    }
+    catch(error) {
+      console.log('ERROR: ' + error);
+    }
+
+
     bet(bet_number);
 
     console.log(bet_number);
@@ -44,6 +54,12 @@ class Player {
 
   static showdown(gameState) {
   }
+
+  static stackLowerThan() {
+    let limit = gameState.players[5].stack;
+    consol.log(limit);
+  }
+
 }
 
 module.exports = Player;
