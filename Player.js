@@ -3,12 +3,6 @@ class Player {
     return '0.1';
   }
 
-  stackLowerThan(gameState) {
-    let limit = gameState.players[5].stack;
-    consol.log(limit);
-  }
-
-
   static betRequest(gameState, bet) {
     let i;
     let bet_number = 801;
@@ -32,7 +26,8 @@ class Player {
 
     // TRY-CATCH for just testing
     try {
-      stackLowerThan(gameState);
+      let limit = gameState.players[5].stack;
+      consol.log(limit);
     }
     catch(error) {
       console.log('ERROR: ' + error);
