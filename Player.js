@@ -5,15 +5,13 @@ class Player {
 
   static betRequest(gameState, bet) {
     let i;
-    let bet_number = 801;
-    //console.log(gameState);
-    console.log(gameState.players[5].name);
-
-    var mycards = gameState.players[5].hole_cards;
-    var mycardsJson = JSON.stringify(mycards);
-    var communityCards = gameState.community_cards;
-    var stack = gameState.players[5].stack;
+    let bet_number = 0;
+    let mycards = gameState.players[5].hole_cards;
+    let mycardsJson = JSON.stringify(mycards);
+    let communityCards = gameState.community_cards;
+    let stack = gameState.players[5].stack;
     
+    console.log(gameState.players[5].name);
     console.log(mycardsJson);
     console.log(communityCards);
     console.log(stack);
@@ -23,16 +21,6 @@ class Player {
         bet_number = gameState.players[i].bet +1;
       }
     }
-
-    // TRY-CATCH for just testing
-    try {
-      let limit = gameState.players[5].stack;
-      console.log(limit);
-    }
-    catch(error) {
-      console.log('ERROR: ' + error);
-    }
-
 
     bet(bet_number);
 
