@@ -3,7 +3,7 @@ class Player {
     return '0.1';
   }
 
-  static stackLowerThan(gameState) {
+  stackLowerThan(gameState) {
     let limit = gameState.players[5].stack;
     consol.log(limit);
   }
