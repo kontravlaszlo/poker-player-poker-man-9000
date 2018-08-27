@@ -13,6 +13,8 @@ class Player {
     var mycardsJson = JSON.stringify(mycards);
     console.log(mycardsJson);
 
+    console.log(gameState.community_cards)
+
     for (i = 0; i < gameState.players.size; i++) {
       if (gameState.players[i].bet > bet && gameState.players[i] != gameState.players[5]) {
         bet_number = gameState.players[i].bet +1;
