@@ -19,6 +19,7 @@ class Player {
     for (i = 0; i < gameState.players.size; i++) {
       if (gameState.players[i].bet > bet_number && gameState.players[i] != gameState.players[5] && gameState.players[i].bet > 0) {
         bet_number = gameState.players[i].bet +1;
+        console.log("player name" + gameState.players[i].name)
       }
     }
 
@@ -37,9 +38,6 @@ class Player {
       if (communityCards.size != 0) {
         //var communityObject = JSON.parse(communityCards);
         console.log('Ezzzzzzzzzzzzzzz: ' + communityCards);
-        console.log(communityCards[0]);
-        console.log(communityCards[1]);
-        console.log(communityCards[2]);
       }
 
 
