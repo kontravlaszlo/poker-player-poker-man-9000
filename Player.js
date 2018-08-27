@@ -16,7 +16,7 @@ class Player {
     console.log(communityCards);
     console.log('My money: ' + stack);
 
-    for (i = 0; i < gameState.players.size; i++) {
+    for (let i = 0; i < 6; i++) {
       console.log("player name" + gameState.players[i].name)
       console.log("player i bet:" + gameState.players[i].bet)
       console.log("énvok-e: " + gameState.players[i])
