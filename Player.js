@@ -3,6 +3,12 @@ class Player {
     return '0.1';
   }
 
+  static stackLowerThan() {
+    let limit = gameState.players[5].stack;
+    consol.log(limit);
+  }
+
+
   static betRequest(gameState, bet) {
     let i;
     let bet_number = 801;
@@ -59,11 +65,6 @@ class Player {
   }
 
   static showdown(gameState) {
-  }
-
-  static stackLowerThan() {
-    let limit = gameState.players[5].stack;
-    consol.log(limit);
   }
 
 }
