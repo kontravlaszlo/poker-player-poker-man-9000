@@ -5,7 +5,7 @@ class Player {
 
   static betRequest(gameState, bet) {
     let i;
-    let bet_number = 0;
+    let bet_number = 1;
     let mycards = gameState.players[5].hole_cards;
     let mycardsJson = JSON.stringify(mycards);
     let communityCards = gameState.community_cards;
@@ -31,10 +31,12 @@ class Player {
       console.log('exceptioooooooooooooooon');
     }
 
+    console.log(typeof communityCards);
+
     try {
       if (communityCards.size != 0) {
-        var communityObject = JSON.parse(communityCards);
-        console.log('Ezzzzzzzzzzzzzzz: ' + communityObject);
+        //var communityObject = JSON.parse(communityCards);
+        console.log('Ezzzzzzzzzzzzzzz: ' + communityCards);
       }
 
 
