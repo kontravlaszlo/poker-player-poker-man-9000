@@ -20,7 +20,7 @@ class Player {
       console.log("player name" + gameState.players[i].name)
       console.log("player i bet:" + gameState.players[i].bet)
       console.log("envok-e: " + gameState.players[i])
-      console.log("nagyobb-e: " +parseFloat(gameState.players[i].bet) > 0);
+      console.log("nagyobb-e: " +parseInt(gameState.players[i].bet) > 0);
       if (gameState.players[i].bet > bet_number && gameState.players[i].id != gameState.players[5].id && gameState.players[i].bet > 0) {
         bet_number = gameState.players[i].bet +1;
         console.log('siker');
