@@ -18,6 +18,11 @@ class Player {
       }
     }
     bet(bet_number);
+    if (mycards[0].rank === mycards[1].rank) {
+      console.log('bbbbrrrrrreeeeeeeekkkkkkkooooookokokokokokokok');
+    } else {
+      console.log('exceptioooooooooooooooon');
+    }
   }
 
   static showdown(gameState) {
