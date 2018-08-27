@@ -12,9 +12,11 @@ class Player {
     var mycards = gameState.players[5].hole_cards;
     var mycardsJson = JSON.stringify(mycards);
     var communityCards = gameState.community_cards;
+    var stack = gameState.players[5].stack;
     
     console.log(mycardsJson);
     console.log(communityCards);
+    console.log(stack);
 
     for (i = 0; i < gameState.players.size; i++) {
       if (gameState.players[i].bet > bet && gameState.players[i] != gameState.players[5]) {
@@ -40,7 +42,7 @@ class Player {
       console.log('exceptioooooooooooooooon');
     }
 
-    var communityObject = JSON.parse(communityCards);
+    /*var communityObject = JSON.parse(communityCards);
 
     var cardsHandTableList = [];
     for(i=0; i<mycards.size; i++) {
@@ -49,7 +51,7 @@ class Player {
     for(i=0; i<communityObject.size; i++) {
     cardsHandTableList.push(communityObject[i].rank);
     }
-    console.log(cardsHandTableList);
+    console.log(cardsHandTableList);*/
   }
 
   static showdown(gameState) {
