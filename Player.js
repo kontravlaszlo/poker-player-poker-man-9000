@@ -12,9 +12,11 @@ class Player {
     var mycards = gameState.players[5].hole_cards;
     var mycardsJson = JSON.stringify(mycards);
     var communityCards = gameState.community_cards;
+    var stack = gameState.players[5].stack;
     
     console.log(mycardsJson);
     console.log(communityCards);
+    console.log(stack);
 
     for (i = 0; i < gameState.players.size; i++) {
       if (gameState.players[i].bet > bet && gameState.players[i] != gameState.players[5]) {
