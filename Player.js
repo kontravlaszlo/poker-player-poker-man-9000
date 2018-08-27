@@ -37,6 +37,9 @@ class Player {
       if (communityCards.size != 0) {
         //var communityObject = JSON.parse(communityCards);
         console.log('Ezzzzzzzzzzzzzzz: ' + communityCards);
+        console.log(communityCards[0]);
+        console.log(communityCards[1]);
+        console.log(communityCards[2]);
       }
 
 
