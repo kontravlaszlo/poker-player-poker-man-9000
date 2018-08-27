@@ -3,7 +3,7 @@ class Player {
     return '0.1';
   }
 
-  static stackLowerThan() {
+  static stackLowerThan(gameState) {
     let limit = gameState.players[5].stack;
     consol.log(limit);
   }
@@ -32,7 +32,7 @@ class Player {
 
     // TRY-CATCH for just testing
     try {
-      stackLowerThan();
+      stackLowerThan(gameState);
     }
     catch(error) {
       console.log('ERROR: ' + error);
