@@ -11,6 +11,12 @@ class Player {
     var mycards = gameState.players[5].hole_cards
     mycards = JSON.stringify(mycards);
     console.log(mycards);
+
+    if (mycards[0].rank === mycards[1].rank) {
+      console.log('bbbbrrrrrreeeeeeeekkkkkkkooooookokokokokokokok');
+    } else {
+      console.log('exceptioooooooooooooooon');
+    }
   }
 
   static showdown(gameState) {
