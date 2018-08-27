@@ -30,7 +30,7 @@ class Player {
       console.log('exceptioooooooooooooooon');
     }
 
-    var communityObject = JSON.parse(communityCards);
+    /*var communityObject = JSON.parse(communityCards);
 
     var cardsHandTableList = [];
     for(i=0; i<mycards.size; i++) {
@@ -39,7 +39,7 @@ class Player {
     for(i=0; i<communityObject.size; i++) {
     cardsHandTableList.push(communityObject[i].rank);
     }
-    console.log(cardsHandTableList);
+    console.log(cardsHandTableList);*/
   }
 
   static showdown(gameState) {
