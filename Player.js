@@ -49,8 +49,11 @@ class Player {
     }
 
     try {
-      var communityObject = JSON.parse(communityCards);
-      console.log('Ezzzzzzzzzzzzzzz: ' + communityObject);
+      if (communityCards.size != 0) {
+        var communityObject = JSON.parse(communityCards);
+        console.log('Ezzzzzzzzzzzzzzz: ' + communityObject);
+      }
+
 
       /*var cardsHandTableList = [];
       for(i=0; i<mycards.size; i++) {
